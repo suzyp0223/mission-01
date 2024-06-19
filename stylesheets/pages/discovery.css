@@ -1,0 +1,106 @@
+/* CSS 작성 */
+body {
+  display: flex;
+  width: 100%;
+
+}
+
+.wrap {
+
+  /* position: absolute;
+  top: 60px;
+  left: 120px;  */
+
+  width: 75%;
+  margin: 0 auto;
+
+}
+
+header img {
+  width: 130px;
+  height: 30px;
+
+}
+
+/* 텍스트 나란치 배치 */
+.subject {
+  display: inline;
+  font-size: 0;
+}
+
+.subject h3 {
+  font-size: 1rem;
+  display: inline;
+  padding-right: 5px;
+}
+
+.subject span {
+  font-size: initial;
+  padding-right: 5px;
+}
+
+.subject p {
+  display: inline;
+  font-size: 10px;
+  padding-right: 5px;
+  color: var(--color-lightgray);
+}
+/* //텍스트 나란치 배치 */
+
+
+
+
+.container {
+  position: relative;
+  border: 1px solid rgb(245, 31, 3);
+  width: 100%;
+
+}
+
+.first-items {
+  border: 1px solid rgb(187, 225, 17);
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  width: 100%;
+
+}
+
+.first-items .img-box {
+  border: 1px solid rgb(17, 225, 17);
+}
+
+.first-items .img-box .btn-buy {
+  position: absolute;
+  left: 20px;
+}
+
+
+.first-items .img-box:first-child {
+  float: left;
+  
+}
+
+.first-items .img-box:last-child {
+  float: right;
+  
+}
+
+
+.first-items img:first-child {
+  border: 1px solid var(--color-blue);
+  width: 35vw;
+  height: 20vh;
+
+
+
+}
+
+
+
+.first-items img:last-child {
+  border: 1px solid var(--color-lightgray);
+  left: 50%;
+
+}

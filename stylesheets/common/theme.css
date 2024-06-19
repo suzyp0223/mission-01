@@ -1,0 +1,10 @@
+/* color시스템 변수선언 */
+:root {
+  --color-red: #e52330;
+  --color-blue: #0096e4;
+  --color-green: #c7cd1d;
+  --color-navy: #181818;
+  --color-lightgray: #c4c4c4;
+  --color-white: #ffffff;
+
+}
