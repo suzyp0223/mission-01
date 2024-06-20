@@ -1,106 +1,167 @@
 /* CSS 작성 */
 body {
+  border: 1px solid black;
   display: flex;
-  width: 100%;
+  width: 1064px;
+  height: 918px;
+  margin: 0 auto;
 
 }
 
 .wrap {
-
-  /* position: absolute;
-  top: 60px;
-  left: 120px;  */
-
-  width: 75%;
+  border: 1px solid rgb(253, 14, 14);
+  width: 1064px;
+  height: 855px;
   margin: 0 auto;
 
 }
 
 header img {
-  width: 130px;
-  height: 30px;
+  width: 176px;
+  height: 40px;
+  margin-top: 100px;
+  margin-bottom: 48px;
 
 }
 
 /* 텍스트 나란치 배치 */
 .subject {
-  display: inline;
-  font-size: 0;
+  padding: 5px;
+  margin-bottom: 24px;
+  vertical-align: middle;
+  
 }
 
-.subject h3 {
-  font-size: 1rem;
+section h3 {
   display: inline;
-  padding-right: 5px;
+
+  color: var(--Black, #181818);
+  text-align: center;
+  /* Title/Medium/24 */
+  font-family: "Noto Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 115%;
+  /* 27.6px */
+
 }
 
-.subject span {
+section span {
   font-size: initial;
   padding-right: 5px;
+  color: var(--color-lightgray);
+  width: 2px;
+  height: 20px;
 }
 
-.subject p {
+section p {
   display: inline;
-  font-size: 10px;
-  padding-right: 5px;
   color: var(--color-lightgray);
+
+
+  /* Title/Medium/16 */
+  font-family: "Noto Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 115%;
+  padding: 5px 0;
+  /* 18.4px */
 }
+
 /* //텍스트 나란치 배치 */
 
 
 
-
+/* 이미지 컨테이너 */
 .container {
-  position: relative;
-  border: 1px solid rgb(245, 31, 3);
+  border: 1px solid rgb(177, 253, 14);
   width: 100%;
-
+  height: 725px;
+  background-color: #ffffb6;
 }
 
-.first-items {
-  border: 1px solid rgb(187, 225, 17);
-  position: absolute;
-  top: 0;
-  left: 0;
+.fir-items {
+  width: 100%;
+  height: 310px;
+  background-color: #e75b28;
+  margin-bottom: 10px;
   overflow: hidden;
-  width: 100%;
+
 
 }
 
-.first-items .img-box {
-  border: 1px solid rgb(17, 225, 17);
+.fir-items img {
+  width: 502px;
+  height: 310px;
+  flex-shrink: 0;
 }
 
-.first-items .img-box .btn-buy {
+.img-box {
+  position: relative;
+
+}
+
+.fir-items .btn-buy {
   position: absolute;
-  left: 20px;
+  left: 5px;
+  bottom: -196px;
+
+
+}
+
+.fir-items a:nth-of-type(1) img {
+  padding-right: 10px;
+
 }
 
 
-.first-items .img-box:first-child {
+.sec-items {
+  width: 100%;
+  height: 235px;
+  background-color: rgb(228, 19, 200);
+  margin-bottom: 10px;
+
+
+}
+
+.sec-items img {
+  width: 243px;
+  height: 310px;
+  flex-shrink: 0;
+}
+
+.sec-items img:not(.sec-lastImg) {
+  padding-right: 10px;
+
+}
+
+.thi-items {
+  width: 100%;
+  height: 235px;
+  background-color: rgb(105, 236, 162);
+
+}
+
+.thi-items img {
+  height: 235px;
   float: left;
-  
-}
-
-.first-items .img-box:last-child {
-  float: right;
-  
 }
 
 
-.first-items img:first-child {
-  border: 1px solid var(--color-blue);
-  width: 35vw;
-  height: 20vh;
-
-
+.thi-items a:nth-of-type(1) img {
+  padding-right: 10px;
+  width: 100px;
 
 }
 
+.thi-items a:nth-of-type(3) img {
+  padding-right: 10px;
+  width: 100px;
+}
 
+.thi-items a:nth-of-type(5) img {
 
-.first-items img:last-child {
-  border: 1px solid var(--color-lightgray);
-  left: 50%;
-
+  width: 100px;
 }

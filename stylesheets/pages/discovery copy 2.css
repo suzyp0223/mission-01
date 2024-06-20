@@ -1,0 +1,270 @@
+/* CSS 작성 */
+.wrap {
+  border: 1px solid black;
+
+  display: inline-flex;
+  padding: 100px 579px 242px 321px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 48px;
+
+}
+
+header img {
+  width: 176px;
+  height: 40px;
+  margin-top: 100px;
+  margin-bottom: 48px;
+
+}
+
+/* 텍스트 나란치 배치 */
+.subject {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+}
+
+section h3 {
+  display: inline;
+  text-align: center;
+
+  font-family: "Noto Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 115%;
+
+
+}
+
+section span {
+  font-size: initial;
+  padding-right: 5px;
+  color: var(--color-lightgray);
+  width: 2px;
+  height: 20px;
+}
+
+section p {
+  display: inline;
+  color: var(--color-lightgray);
+
+
+  /* Title/Medium/16 */
+  font-family: "Noto Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 115%;
+  padding: 5px 0;
+
+}
+/* //텍스트 나란치 배치 */
+
+
+
+/* 이미지 컨테이너 */
+.container {
+  border: 1px solid rgb(177, 253, 14);
+  background-color: #ffffb6;
+
+
+  display: flex;
+  width: 1023px;
+  padding-top: 8px;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.fir-items {
+  width: 100%;
+  height: 310px;
+  background-color: #e75b28;
+  overflow: hidden;
+}
+
+.fir-items img {
+  width: 446px;
+  height: 270px;
+  flex-shrink: 0;
+  margin: 20px 28px;
+}
+
+.fir-items .img-box {
+  float: left;
+}
+
+.fir-items .img-box:first-child {
+  position: relative;
+  border: 1px solid black;
+  width: 500px;
+  height: 310px;
+}
+
+.fir-items .img-box:last-child {
+  position: relative;
+  border: 1px solid rgb(251, 23, 23);
+  width: 450px;
+  height: 310px;
+
+}
+
+.fir-items .btn-buy {
+  position: absolute;
+  left: 48px;
+  bottom: 40px;
+  text-decoration: none;
+  color: var(--color-white);
+
+
+  font-family: "Noto Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+
+  background: var(--color-blue600);
+  display: inline-flex;
+  padding: 12px 18px 13px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.fir-items .img-box:last-child {
+  position: relative;
+
+}
+
+.fir-items .btn {
+  position: absolute;
+  left: 28px;
+  bottom: 20px;
+  text-decoration: none;
+  color: var(--color-white);
+  background-color: var(--color-lightgray);
+
+  width: 42px;
+  height: 42px;
+
+
+}
+
+
+
+
+
+
+.sec-items {
+  width: 100%;
+  height: 310px;
+  background-color: rgb(228, 19, 200);
+  margin-bottom: 10px;
+
+
+}
+
+.sec-items .img-box {
+  float: left;
+  width: 243px;
+  height: 310px;
+  border: 1px solid rgb(240, 140, 9);
+  position: relative;
+
+}
+
+.sec-items img {
+
+  width: 195px;
+  height: 282px;
+  margin: 23px 14px 25px;
+
+}
+
+
+
+
+.sec-items .btn {
+  position: absolute;
+  left: 28px;
+  bottom: 20px;
+  text-decoration: none;
+  color: var(--color-white);
+  background-color: var(--color-lightgray);
+
+  width: 42px;
+  height: 42px;
+
+
+}
+
+
+
+
+.thi-items {
+  width: 100%;
+  height: 310px;
+  background-color: rgb(105, 236, 162);
+}
+
+.thi-items .img-box {
+  float: left;
+  position: relative;
+}
+
+.thi-items .item-img1 {
+  width: 446px;
+  height: 270px;
+  margin: 20px 28px;
+}
+
+.thi-items img:not(.item-img1) {
+
+  width: 195px;
+  height: 282px;
+  margin: 23px 14px 25px;
+}
+
+
+
+
+
+.thi-items .img-box:nth-of-type(1) {
+  border: 1px solid rgb(44, 12, 225);
+  width: 502px;
+  height: 310px;
+}
+
+.thi-items .img-box:nth-of-type(2) {
+  border: 1px solid rgb(44, 12, 225);
+  width: 243px;
+  height: 310px;
+}
+
+.thi-items .img-box:nth-of-type(3) {
+  border: 1px solid rgb(44, 12, 225);
+  width: 243px;
+  height: 310px;
+}
+
+
+
+.thi-items .img-box .btn {
+  position: absolute;
+  left: 28px;
+  bottom: 20px;
+  text-decoration: none;
+  color: var(--color-white);
+  background-color: var(--color-lightgray);
+
+  width: 42px;
+  height: 42px;
+
+
+}
+
