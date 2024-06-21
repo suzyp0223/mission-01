@@ -14,6 +14,7 @@ header img {
   margin-bottom: 48px;
 }
 
+
 /* 텍스트 나란치 배치 */
 .subject {
   display: flex;
@@ -51,8 +52,6 @@ section p {
   padding: 5px 0;
 }
 
-/* //텍스트 나란치 배치 */
-
 
 
 /* 이미지 컨테이너 */
@@ -78,8 +77,6 @@ section p {
   margin: 20px 28px;
 }
 
-
-
 .fir-items .img-box {
   float: left;
 }
@@ -90,40 +87,11 @@ section p {
   height: 310px;
 }
 
-
-
-
-
 .fir-items .img-box:last-child {
   position: relative;
   width: 500px;
   height: 310px;
 }
-
-
-.fir-items .btn-buy {
-  position: absolute;
-  left: 20px;
-  bottom: 20px;
-  text-decoration: none;
-  color: var(--color-white);
-  background-color: var(--opacity-20);
-  width: 42px;
-  height: 42px;
-  background-image: url("../common/button.svg");
-}
-
-.fir-items .btn {
-  position: absolute;
-  left: 20px;
-  bottom: 20px;
-  text-decoration: none;
-  color: var(--color-white);
-  background-color: var(--opacity-20);
-  width: 42px;
-  height: 42px;
-}
-
 
 .sec-items {
   width: 100%;
@@ -142,19 +110,6 @@ section p {
   height: 282px;
   margin: 14px 25px 14px 23px;
 }
-
-.sec-items .btn {
-  position: absolute;
-  left: 0px;
-  bottom: 0px;
-  text-decoration: none;
-  color: var(--color-white);
-  background-color: var(--opacity-20);
-  width: 42px;
-  height: 42px;
-}
-
-
 
 
 .thi-items {
@@ -194,18 +149,6 @@ section p {
   height: 310px;
 }
 
-.thi-items .img-box .btn {
-  position: absolute;
-  left: 0px;
-  bottom: 0px;
-  text-decoration: none;
-  color: var(--color-white);
-  background-color: var(--opacity-20);
-
-  width: 42px;
-  height: 42px;
-
-}
 
 /* 버튼, 테두리 - hover, focus 효과 */
 .container .img-box {
@@ -220,16 +163,8 @@ section p {
   outline: 1px solid var(--color-blue600);
 }
 
-.sec-items .img-box:focus {
-  outline: 1px solid var(--color-blue600);
-}
-
-.thi-items .img-box:focus {
-  outline: 1px solid var(--color-blue600);
-}
-
 /* 회색버튼 */
-.fir-items .btn-buy {
+.fir-items .btn {
   position: absolute;
   left: 20px;
   bottom: 20px;
@@ -240,6 +175,25 @@ section p {
   height: 42px;
   background-image: url("../common/button.svg");
 }
+
+.sec-items .img-box:focus {
+  outline: 1px solid var(--color-blue600);
+}
+
+.thi-items .img-box:focus {
+  outline: 1px solid var(--color-blue600);
+}
+
+.fir-items .btn:hover {
+  opacity: 0;
+}
+
+
+
+.fir-items .btn:hover::after {
+  opacity: 0;
+}
+
 
 .fir-items .btn {
   position: absolute;
@@ -252,8 +206,32 @@ section p {
   height: 42px;
 }
 
+.sec-items .btn {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  text-decoration: none;
+  color: var(--color-white);
+  background-color: var(--opacity-20);
+  width: 42px;
+  height: 42px;
+}
+
+.thi-items .img-box .btn {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  text-decoration: none;
+  color: var(--color-white);
+  background-color: var(--opacity-20);
+
+  width: 42px;
+  height: 42px;
+}
+
+
 /* 호버시 파랑색 구매하기 버튼 */
-.fir-items .img-box:hover::after {
+.fir-items .img-box:hover::before {
   content: '구매하기';
   position: absolute;
   left: 20px;
@@ -273,34 +251,23 @@ section p {
   align-items: center;
   padding: 12px 18px 13px 20px;
   gap: 16px;
+
+  transition: all 1s;
 }
 
-.fir-items .btn-buy img {
+.fir-items .img-box:hover::after {
+  content: url("../../assets/icon/angle-right-square.svg");
   margin: 0;
   width: 6px;
   height: 10px;
   color: var(--color-gray100);
-  display: inline;
+  /* display: inline; */
 
   position: absolute;
-  bottom: 16px;
-  left: 91px;
-  z-index: 1;
+  bottom: 43px;
+  left: 108px;
+  transition: all 1s;
 }
-
-/* .fir-items .btn-buy img {
-  margin: 0;
-  width: 6px;
-  height: 10px;
-  color: var(--color-gray100);
-  display: inline;
-
-  position: absolute;
-  bottom: 16px;
-  left: 91px;
-  z-index: 1;
-} */
-
 
 
 
@@ -324,6 +291,22 @@ section p {
   align-items: center;
   padding: 12px 18px 13px 20px;
   gap: 16px;
+  /* transition: all 2s; */
+}
+
+.sec-items .img-box::after {
+  content: url("../../assets/icon/angle-right-square.svg");
+  margin: 0;
+  width: 6px;
+  height: 10px;
+  color: var(--color-gray100);
+  /* display: inline; */
+
+  position: absolute;
+  bottom: 37px;
+  left: 110px;
+  /* z-index: 1; */
+  transition: all 1s;
 }
 
 .thi-items .img-box:hover::after {
@@ -348,7 +331,23 @@ section p {
   gap: 16px;
 }
 
-/* 포커스시 파랑색 구매하기 버튼 */
+.thi-items .img-box::after {
+  content: url("../../assets/icon/angle-right-square.svg");
+  margin: 0;
+  width: 6px;
+  height: 10px;
+  color: var(--color-gray100);
+  /* display: inline; */
+
+  position: absolute;
+  bottom: 43px;
+  left: 108px;
+  transition: all 1s;
+}
+
+
+
+/* '포커스'시 파랑색 구매하기 버튼 */
 .fir-items .img-box:focus::after {
   content: '구매하기';
   position: absolute;
@@ -369,6 +368,7 @@ section p {
   align-items: center;
   padding: 12px 18px 13px 20px;
   gap: 16px;
+  transition: all 2s;
 }
 
 .sec-items .img-box:focus::after {
