@@ -188,7 +188,10 @@ section p {
 
 .fir-items .img-box:hover span,
 .sec-items .img-box:hover span,
-.thi-items .img-box:hover span {
+.thi-items .img-box:hover span,
+.fir-items .img-box:focus span,
+.sec-items .img-box:focus span,
+.thi-items .img-box:focus span {
   width: 112px;
   height: 42px;
   font-family: "Noto Sans";
@@ -203,13 +206,16 @@ section p {
 }
 
 .fir-items .img-box:hover span,
-.sec-items .img-box:hover span {
+.sec-items .img-box:hover span,
+.fir-items .img-box:focus span,
+.sec-items .img-box:focus span {
   position: absolute;
   left: 20px;
   bottom: 20px;
 }
 
-.thi-items .img-box:hover span {
+.thi-items .img-box:hover span,
+.thi-items .img-box:focus span {
   position: absolute;
   left: 23px;
   bottom: 14px;
@@ -218,7 +224,10 @@ section p {
 /* 파랑색버튼에 오른쪽 화살표 붙이기 */
 .fir-items .img-box:hover::after,
 .sec-items .img-box:hover::after,
-.thi-items .img-box:hover::after {
+.thi-items .img-box:hover::after,
+.fir-items .img-box:focus::after,
+.sec-items .img-box:focus::after,
+.thi-items .img-box:focus::after {
   content: url("../../assets/icon/angle-right-square.svg");
   margin: 0;
   width: 6px;
@@ -242,6 +251,9 @@ section p {
 /* 호버시 회색버튼 숨기기 */
 .fir-items .img-box:hover .btn,
 .sec-items .img-box:hover .btn,
-.thi-items .img-box:hover .btn {
+.thi-items .img-box:hover .btn,
+.fir-items .img-box:focus .btn,
+.sec-items .img-box:focus .btn,
+.thi-items .img-box:focus .btn {
   opacity: 0;
 }

@@ -248,7 +248,7 @@ section p {
   left: 110px;
 }
 
-/* 호버시 회색버튼 숨기기 */
+/* 호버,포커스시 회색버튼 숨기기 */
 .fir-items .img-box:hover .btn,
 .sec-items .img-box:hover .btn,
 .thi-items .img-box:hover .btn,
@@ -257,39 +257,3 @@ section p {
 .thi-items .img-box:focus .btn {
   opacity: 0;
 }
-
-/* 포커스 */
-/* .fir-items .img-box span,
-.sec-items .img-box span,
-.thi-items .img-box span {
-  display: none;
-} */
-
-/* .fir-items .img-box:focus span,
-.sec-items .img-box:focus span,
-.thi-items .img-box:focus span {
-  width: 112px;
-  height: 42px;
-  font-family: "Noto Sans";
-  font-size: 14px;
-  font-style: normal;
-  color: var(--color-white);
-  background: var(--color-blue600);
-  display: inline-flex;
-  align-items: center;
-  gap: 16px;
-  padding: 12px 18px 13px 20px;
-}
-
-.fir-items .img-box:focus span,
-.sec-items .img-box:focus span {
-  position: absolute;
-  left: 20px;
-  bottom: 20px;
-}
-
-.thi-items .img-box:focus span {
-  position: absolute;
-  left: 23px;
-  bottom: 14px;
-} */
