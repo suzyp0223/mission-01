@@ -1,19 +1,10 @@
 /* CSS 작성 */
-body {
-  border: 1px solid black;
-  display: flex;
-  width: 1064px;
-  height: 918px;
-  margin: 0 auto;
-
-}
-
 .wrap {
-  border: 1px solid rgb(253, 14, 14);
-  width: 1064px;
-  height: 855px;
-  margin: 0 auto;
-
+  display: inline-flex;
+  padding: 100px 579px 242px 321px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 48px;
 }
 
 header img {
@@ -21,147 +12,359 @@ header img {
   height: 40px;
   margin-top: 100px;
   margin-bottom: 48px;
-
 }
+
 
 /* 텍스트 나란치 배치 */
 .subject {
-  padding: 5px;
-  margin-bottom: 24px;
-  vertical-align: middle;
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
 section h3 {
   display: inline;
-
-  color: var(--Black, #181818);
   text-align: center;
-  /* Title/Medium/24 */
   font-family: "Noto Sans";
   font-size: 24px;
   font-style: normal;
   font-weight: 500;
   line-height: 115%;
-  /* 27.6px */
-
 }
 
 section span {
   font-size: initial;
   padding-right: 5px;
-  color: var(--color-lightgray);
+  color: var(--color-gray500);
   width: 2px;
   height: 20px;
 }
 
 section p {
   display: inline;
-  color: var(--color-lightgray);
-
-
-  /* Title/Medium/16 */
+  color: var(--color-gray500);
   font-family: "Noto Sans";
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: 115%;
   padding: 5px 0;
-  /* 18.4px */
 }
-
-/* //텍스트 나란치 배치 */
 
 
 
 /* 이미지 컨테이너 */
 .container {
-  border: 1px solid rgb(177, 253, 14);
-  width: 100%;
-  height: 725px;
-  background-color: #ffffb6;
+  display: flex;
+  width: 1023px;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
 }
 
-.fir-items {
-  width: 100%;
-  height: 310px;
-  background-color: #e75b28;
-  margin-bottom: 10px;
-  overflow: hidden;
-
-
-}
-
-.fir-items img {
-  width: 502px;
-  height: 310px;
-  flex-shrink: 0;
-}
-
-.img-box {
-  position: relative;
-
-}
-
-.fir-items .btn-buy {
-  position: absolute;
-  left: 5px;
-  bottom: -196px;
-
-
-}
-
-.fir-items a:nth-of-type(1) img {
-  padding-right: 10px;
-
-}
-
-
-.sec-items {
-  width: 100%;
-  height: 235px;
-  background-color: rgb(228, 19, 200);
-  margin-bottom: 10px;
-
-
-}
-
-.sec-items img {
-  width: 243px;
-  height: 310px;
-  flex-shrink: 0;
-}
-
-.sec-items img:not(.sec-lastImg) {
-  padding-right: 10px;
-
-}
-
+.fir-items,
+.sec-items,
 .thi-items {
   width: 100%;
-  height: 235px;
-  background-color: rgb(105, 236, 162);
-
+  height: 310px;
 }
 
-.thi-items img {
-  height: 235px;
+.fir-items img:not(:nth-child(1)) {
+  width: 446px;
+  height: 270px;
+  flex-shrink: 0;
+  margin: 20px 28px;
+}
+
+.fir-items .img-box {
   float: left;
 }
 
+.fir-items .img-box:first-child,
+.fir-items .img-box:last-child {
+  position: relative;
+  width: 500px;
+  height: 310px;
+}
 
-.thi-items a:nth-of-type(1) img {
-  padding-right: 10px;
-  width: 100px;
+.sec-items .img-box {
+  float: left;
+  position: relative;
+  width: 243px;
+  height: 310px;
+}
+
+.sec-items .item-img,
+.thi-items img:not(.item-img1) {
+  width: 195px;
+  height: 282px;
+  margin: 14px 25px 14px 23px;
+}
+
+.thi-items .img-box {
+  float: left;
+  position: relative;
+}
+
+.thi-items .item-img1 {
+  width: 446px;
+  height: 270px;
+  margin: 20px 28px;
+}
+
+
+.thi-items .img-box:nth-of-type(1) {
+  width: 502px;
+  height: 310px;
+}
+
+.thi-items .img-box:nth-of-type(2),
+.thi-items .img-box:nth-of-type(3) {
+  width: 243px;
+  height: 310px;
+}
+
+
+/* 버튼, 테두리 - hover, focus 효과 */
+.container .img-box {
+  border: 1px solid var(--color-gray100);
+}
+
+.container .img-box:hover,
+.fir-items .img-box:focus,
+.sec-items .img-box:focus,
+.thi-items .img-box:focus {
+  outline: 1px solid var(--color-blue600);
+}
+
+
+
+/* 꿀생강차 회색버튼 */
+.fir-items .btn {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  text-decoration: none;
+  color: var(--color-white);
+  background-color: var(--opacity-20);
+  width: 42px;
+  height: 42px;
+  background-image: url("../common/button.svg");
+}
+
+/* 회색버튼 */
+.fir-items .img-box .btn,
+.sec-items .img-box .btn {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  text-decoration: none;
+  color: var(--color-white);
+  background-color: var(--opacity-20);
+  width: 42px;
+  height: 42px;
+}
+
+.thi-items .img-box .btn {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  text-decoration: none;
+  color: var(--color-white);
+  background-color: var(--opacity-20);
+
+  width: 42px;
+  height: 42px;
+}
+
+
+/* 호버시 파랑색 구매하기 버튼 */
+.fir-items .img-box:hover::before {
+  content: '구매하기';
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  text-decoration: none;
+  color: var(--color-white);
+
+  width: 74px;
+  height: 17px;
+  font-family: "Noto Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  background: var(--color-blue600);
+  display: inline-flex;
+  align-items: center;
+  padding: 12px 18px 13px 20px;
+  gap: 16px;
+
+  opacity: 1;
+  /* transition: all 1s; */
+}
+
+.fir-items .img-box:hover::after {
+  content: url("../../assets/icon/angle-right-square.svg");
+  margin: 0;
+  width: 6px;
+  height: 10px;
+  color: var(--color-gray100);
+  /* display: inline; */
+
+  position: absolute;
+  bottom: 43px;
+  left: 108px;
+  transition: all 1s;
+
+  opacity: 1;
+}
+
+
+
+.sec-items .img-box:hover::before {
+  content: '구매하기';
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  text-decoration: none;
+  color: var(--color-white);
+
+  width: 74px;
+  height: 17px;
+  font-family: "Noto Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  background: var(--color-blue600);
+  display: inline-flex;
+  align-items: center;
+  padding: 12px 18px 13px 20px;
+  gap: 16px;
+  /* transition: all 1s; */
+}
+
+.sec-items .img-box:hover::after {
+  content: url("../../assets/icon/angle-right-square.svg");
+  margin: 0;
+  width: 6px;
+  height: 10px;
+  color: var(--color-gray100);
+  /* display: hidden; */
+
+  position: absolute;
+  bottom: 37px;
+  left: 110px;
+  /* z-index: 1; */
+
+  transition: all 1s;
 
 }
 
-.thi-items a:nth-of-type(3) img {
-  padding-right: 10px;
-  width: 100px;
+.thi-items .img-box:hover::after {
+  content: '구매하기';
+  position: absolute;
+  left: 23px;
+  bottom: 14px;
+  text-decoration: none;
+  color: var(--color-white);
+
+  width: 74px;
+  height: 17px;
+  font-family: "Noto Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  background: var(--color-blue600);
+  display: inline-flex;
+  align-items: center;
+  padding: 12px 18px 13px 20px;
+  gap: 16px;
 }
 
-.thi-items a:nth-of-type(5) img {
+.thi-items .img-box::after {
+  content: url("../../assets/icon/angle-right-square.svg");
+  margin: 0;
+  width: 6px;
+  height: 10px;
+  color: var(--color-gray100);
+  /* display: inline; */
 
-  width: 100px;
+  position: absolute;
+  bottom: 43px;
+  left: 108px;
+  transition: all 1s;
+}
+
+
+
+/* '포커스'시 파랑색 구매하기 버튼 */
+.fir-items .img-box:focus::after {
+  content: '구매하기';
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  text-decoration: none;
+  color: var(--color-white);
+
+  width: 74px;
+  height: 17px;
+  font-family: "Noto Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  background: var(--color-blue600);
+  display: inline-flex;
+  align-items: center;
+  padding: 12px 18px 13px 20px;
+  gap: 16px;
+  transition: all 2s;
+}
+
+.sec-items .img-box:focus::after {
+  content: '구매하기';
+  position: absolute;
+  left: 23px;
+  bottom: 14px;
+  text-decoration: none;
+  color: var(--color-white);
+
+  width: 74px;
+  height: 17px;
+  font-family: "Noto Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  background: var(--color-blue600);
+  display: inline-flex;
+  align-items: center;
+  padding: 12px 18px 13px 20px;
+  gap: 16px;
+}
+
+.thi-items .img-box:focus::after {
+  content: '구매하기';
+  position: absolute;
+  left: 23px;
+  bottom: 14px;
+  text-decoration: none;
+  color: var(--color-white);
+
+  width: 74px;
+  height: 17px;
+  font-family: "Noto Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  background: var(--color-blue600);
+  display: inline-flex;
+  align-items: center;
+  padding: 12px 18px 13px 20px;
+  gap: 16px;
 }
