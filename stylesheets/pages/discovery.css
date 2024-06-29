@@ -152,7 +152,9 @@ section p {
 }
 
 
-/* 버튼, 테두리 - hover, focus 효과 */
+/* 버튼, 테두리 - hover, focus 효과 
+transition이 안먹혀요..
+*/
 .container .img-box {
   border: 1px solid var(--color-gray100);
 }
@@ -162,6 +164,7 @@ section p {
 .sec-items .img-box:focus,
 .thi-items .img-box:focus {
   outline: 1px solid var(--color-blue600);
+  transition: all 1s;
 }
 
 .thi-items .img-box .btn {
@@ -225,7 +228,7 @@ section p {
 .fir-items .img-box:focus::after,
 .sec-items .img-box:focus::after,
 .thi-items .img-box:focus::after {
-  content: url("../../assets/icon/angle-right-square.svg");
+  content: url("/assets/icon/angle-right-square.svg");
   margin: 0;
   width: 6px;
   height: 10px;
